@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyMotion - Servicios de Drones y Fotografía en Colombia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Recurso%201%404x-lXoVc4AgLYXSdBVa1VULpdHEnssg89.png" alt="SkyMotion Logo" class="navbar-logo">
+                SkyMotion
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ejemplos">Ejemplos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cotizacion">Cotización</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 text-white">
+                    <h1 class="animate__animated animate__fadeInDown">Capturamos Colombia desde el cielo</h1>
+                    <p class="lead animate__animated animate__fadeInUp">Servicios profesionales de fotografía y video con drones para publicidad, eventos y proyectos comerciales</p>
+                    <div class="mt-4 animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#cotizacion" class="btn btn-primary btn-lg me-2">Solicitar Cotización</a>
+                        <a href="#portafolio" class="btn btn-outline-light btn-lg">Ver Portafolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" alt="Drone en acción" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>En <strong>SkyMotion</strong> somos expertos en capturar imágenes y videos aéreos de alta calidad utilizando la última tecnología en drones profesionales.</p>
+                    <p>Con más de 5 años de experiencia en el mercado colombiano, hemos trabajado con empresas líderes en publicidad, constructoras, organizadores de eventos y productoras audiovisuales.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-camera-video fs-1 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Calidad 4K</h5>
+                                    <p class="mb-0">Imágenes de alta resolución</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-people fs-1 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Equipo Profesional</h5>
+                                    <p class="mb-0">Pilotos certificados</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Cobertura Nacional</h5>
+                                    <p class="mb-0">Servicio en toda Colombia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-award fs-1 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="mb-0">Garantía</h5>
+                                    <p class="mb-0">Satisfacción asegurada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones aéreas para todo tipo de proyectos</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3">Fotografía Inmobiliaria</h4>
+                            <p>Destacamos las mejores características de propiedades, terrenos y desarrollos inmobiliarios con tomas aéreas impactantes.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Tomas exteriores e interiores</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Recorridos virtuales</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Fotografías de alta resolución</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#cotizacion" class="btn btn-outline-primary">Cotizar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-camera-video"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3">Video Publicitario</h4>
+                            <p>Creamos contenido audiovisual de alto impacto para campañas publicitarias, redes sociales y presentaciones corporativas.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Grabación en 4K</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Edición profesional</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Efectos especiales</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#cotizacion" class="btn btn-outline-primary">Cotizar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-calendar-event"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3">Eventos y Celebraciones</h4>
+                            <p>Inmortalizamos momentos especiales con perspectivas únicas para bodas, conciertos, competencias deportivas y eventos corporativos.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Tomas panorámicas</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Seguimiento de acción</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Entrega rápida</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#cotizacion" class="btn btn-outline-primary">Cotizar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-map"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3">Inspección y Mapeo</h4>
+                            <p>Realizamos inspecciones técnicas, mapeo de terrenos y modelado 3D para proyectos de ingeniería, agricultura y construcción.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Ortofotografía</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Modelos 3D</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Análisis técnico</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#cotizacion" class="btn btn-outline-primary">Cotizar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-film"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3">Producción Audiovisual</h4>
+                            <p>Colaboramos con productoras y directores para crear contenido cinematográfico, documentales y series con tomas aéreas espectaculares.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Calidad cinematográfica</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Coordinación con equipos</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Planificación de vuelos</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#cotizacion" class="btn btn-outline-primary">Cotizar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                        <div class="card-body text-center">
+                            <div class="service-icon">
+                                <i class="bi bi-lightning"></i>
+                            </div>
+                            <h4 class="mt-4 mb-3">Inspección de Infraestructura</h4>
+                            <p>Evaluamos el estado de torres, líneas eléctricas, puentes y otras estructuras de difícil acceso con total seguridad.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Detección de daños</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Informes detallados</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Imágenes térmicas</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#cotizacion" class="btn btn-outline-primary">Cotizar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Paquetes Disponibles</h2>
+                <p class="section-subtitle">Soluciones adaptadas a tus necesidades</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-header text-center bg-transparent">
+                            <h3 class="my-0">Básico</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title text-center">$750.000 <small class="text-muted">COP</small></h2>
+                            <ul class="list-unstyled mt-4 mb-4">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>2 horas de vuelo</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>20 fotografías editadas</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Video de 1 minuto</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Entrega en 3 días hábiles</li>
+                                <li><i class="bi bi-x-circle-fill text-muted me-2"></i>Sin edición avanzada</li>
+                                <li><i class="bi bi-x-circle-fill text-muted me-2"></i>Sin efectos especiales</li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#cotizacion" class="btn btn-outline-primary btn-lg w-100">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100 popular">
+                        <div class="card-header text-center bg-transparent">
+                            <span class="badge bg-primary position-absolute top-0 start-50 translate-middle">Más Popular</span>
+                            <h3 class="my-0">Profesional</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title text-center">$1.500.000 <small class="text-muted">COP</small></h2>
+                            <ul class="list-unstyled mt-4 mb-4">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>4 horas de vuelo</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>40 fotografías editadas</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Video de 3 minutos</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Entrega en 5 días hábiles</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Edición avanzada</li>
+                                <li><i class="bi bi-x-circle-fill text-muted me-2"></i>Sin efectos especiales</li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#cotizacion" class="btn btn-primary btn-lg w-100">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card h-100">
+                        <div class="card-header text-center bg-transparent">
+                            <h3 class="my-0">Premium</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title pricing-card-title text-center">$2.800.000 <small class="text-muted">COP</small></h2>
+                            <ul class="list-unstyled mt-4 mb-4">
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>8 horas de vuelo</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>80 fotografías editadas</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Video de 5 minutos</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Entrega en 7 días hábiles</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Edición avanzada</li>
+                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Efectos especiales</li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#cotizacion" class="btn btn-outline-primary btn-lg w-100">Seleccionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p>¿Necesitas un paquete personalizado? <a href="#contacto" class="text-primary">Contáctanos</a> para crear una solución a medida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portafolio" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestro Portafolio</h2>
+                <p class="section-subtitle">Descubre nuestros mejores trabajos</p>
+            </div>
+            <div class="portfolio-filter mb-4">
+                <button class="btn btn-sm btn-outline-primary active me-2 mb-2" data-filter="all">Todos</button>
+                <button class="btn btn-sm btn-outline-primary me-2 mb-2" data-filter="inmobiliaria">Inmobiliaria</button>
+                <button class="btn btn-sm btn-outline-primary me-2 mb-2" data-filter="eventos">Eventos</button>
+                <button class="btn btn-sm btn-outline-primary me-2 mb-2" data-filter="publicidad">Publicidad</button>
+                <button class="btn btn-sm btn-outline-primary me-2 mb-2" data-filter="naturaleza">Naturaleza</button>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="inmobiliaria">
+                    <div class="card portfolio-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Proyecto inmobiliario en Bogotá">
+                        <div class="card-body">
+                            <h5 class="card-title">Edificio Mirador</h5>
+                            <p class="card-text">Fotografía aérea para proyecto inmobiliario en Bogotá.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Inmobiliaria</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="eventos">
+                    <div class="card portfolio-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Festival de música en Medellín">
+                        <div class="card-body">
+                            <h5 class="card-title">Festival Melodía</h5>
+                            <p class="card-text">Cobertura aérea del festival de música en Medellín.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Eventos</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="publicidad">
+                    <div class="card portfolio-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Campaña publicitaria para marca deportiva">
+                        <div class="card-body">
+                            <h5 class="card-title">Campaña Deportiva</h5>
+                            <p class="card-text">Video promocional para marca deportiva nacional.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicidad</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="naturaleza">
+                    <div class="card portfolio-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Parque Nacional Natural Tayrona">
+                        <div class="card-body">
+                            <h5 class="card-title">Parque Tayrona</h5>
+                            <p class="card-text">Documental sobre la biodiversidad del Parque Tayrona.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Naturaleza</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="inmobiliaria">
+                    <div class="card portfolio-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Complejo residencial en Cartagena">
+                        <div class="card-body">
+                            <h5 class="card-title">Residencial Marina</h5>
+                            <p class="card-text">Fotografía y video para complejo residencial en Cartagena.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Inmobiliaria</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 portfolio-item" data-category="publicidad">
+                    <div class="card portfolio-card">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Campaña turística de Cali">
+                        <div class="card-body">
+                            <h5 class="card-title">Descubre Cali</h5>
+                            <p class="card-text">Campaña turística para promocionar la ciudad de Cali.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">Publicidad</small>
+                                <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal">Ver Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="ejemplos" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Ejemplos de Nuestro Trabajo</h2>
+                <p class="section-subtitle">Mira cómo transformamos proyectos con nuestra visión aérea</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="img-fluid" alt="Video ejemplo de drone">
+                            </div>
+                            <div class="p-4">
+                                <h4>Recorrido por Cartagena</h4>
+                                <p>Un viaje aéreo por las murallas y playas de la ciudad histórica de Cartagena, mostrando la belleza colonial y natural de este destino turístico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="img-fluid" alt="Video ejemplo de drone">
+                            </div>
+                            <div class="p-4">
+                                <h4>Proyecto Inmobiliario El Prado</h4>
+                                <p>Seguimiento de construcción y presentación final de este exclusivo conjunto residencial en las afueras de Bogotá.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="img-fluid" alt="Video ejemplo de drone">
+                            </div>
+                            <div class="p-4">
+                                <h4>Evento Corporativo Anual</h4>
+                                <p>Cobertura aérea del evento corporativo de una importante empresa multinacional en el Centro de Convenciones de Medellín.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="ratio ratio-16x9">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="img-fluid" alt="Video ejemplo de drone">
+                            </div>
+                            <div class="p-4">
+                                <h4>Parques Naturales de Colombia</h4>
+                                <p>Documental sobre la riqueza natural de Colombia, mostrando la diversidad de paisajes desde una perspectiva aérea única.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#portafolio" class="btn btn-primary">Ver Más Ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-subtitle">Experiencias de quienes han confiado en nosotros</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-item text-center">
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="rounded-circle mb-3" alt="Cliente">
+                                    <h5>Carlos Ramírez</h5>
+                                    <p class="text-muted">Director de Marketing, Constructora Moderna</p>
+                                    <div class="rating mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"El trabajo de SkyMotion superó todas nuestras expectativas. Las imágenes aéreas de nuestros proyectos inmobiliarios han aumentado significativamente el interés de los compradores. Su profesionalismo y calidad son excepcionales."</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item text-center">
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="rounded-circle mb-3" alt="Cliente">
+                                    <h5>Laura Mendoza</h5>
+                                    <p class="text-muted">Gerente de Eventos, Festival de Cali</p>
+                                    <div class="rating mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Contratamos a SkyMotion para la cobertura de nuestro festival anual y quedamos maravillados con los resultados. Capturaron momentos únicos desde ángulos que nunca habíamos imaginado. Definitivamente volveremos a trabajar con ellos."</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item text-center">
+                                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="rounded-circle mb-3" alt="Cliente">
+                                    <h5>Andrés Gutiérrez</h5>
+                                    <p class="text-muted">Director Creativo, Agencia Impulso</p>
+                                    <div class="rating mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-half text-warning"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Como agencia de publicidad, necesitamos proveedores que entiendan nuestra visión creativa. El equipo de SkyMotion no solo entendió nuestras ideas, sino que las elevó con su experiencia y tecnología. El resultado fue una campaña publicitaria impactante."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                        <div class="carousel-indicators position-relative mt-4">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="cotizacion" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title text-white">Solicita una Cotización</h2>
+                    <p>Completa el formulario y te enviaremos una cotización personalizada según tus necesidades específicas.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i>Respuesta en menos de 24 horas</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i>Presupuesto detallado sin compromiso</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i>Asesoramiento personalizado</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill me-2"></i>Opciones flexibles según tu presupuesto</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <form id="quoteForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Nombre Completo</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="city" class="form-label">Ciudad</label>
+                                        <input type="text" class="form-control" id="city" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="serviceType" class="form-label">Tipo de Servicio</label>
+                                        <select class="form-select" id="serviceType" required>
+                                            <option value="" selected disabled>Selecciona un servicio</option>
+                                            <option value="inmobiliaria">Fotografía Inmobiliaria</option>
+                                            <option value="eventos">Eventos y Celebraciones</option>
+                                            <option value="publicidad">Video Publicitario</option>
+                                            <option value="inspeccion">Inspección y Mapeo</option>
+                                            <option value="produccion">Producción Audiovisual</option>
+                                            <option value="infraestructura">Inspección de Infraestructura</option>
+                                            <option value="otro">Otro (especificar)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="projectDetails" class="form-label">Detalles del Proyecto</label>
+                                        <textarea class="form-control" id="projectDetails" rows="4" required></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="budget" class="form-label">Presupuesto Aproximado</label>
+                                        <select class="form-select" id="budget">
+                                            <option value="" selected disabled>Selecciona un rango</option>
+                                            <option value="menos-1m">Menos de $1.000.000 COP</option>
+                                            <option value="1m-2m">$1.000.000 - $2.000.000 COP</option>
+                                            <option value="2m-5m">$2.000.000 - $5.000.000 COP</option>
+                                            <option value="mas-5m">Más de $5.000.000 COP</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="date" class="form-label">Fecha Estimada</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                Acepto los términos y condiciones y la política de privacidad
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100">Solicitar Cotización</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Estamos aquí para responder tus preguntas</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <div class="icon-box">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h5>Ubicación</h5>
+                            <p>Calle 85 #11-53, Oficina 401<br>Bogotá, Colombia</p>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="icon-box">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <h5>Correo Electrónico</h5>
+                            <p>info@skymotion.com.co<br>ventas@skymotion.com.co</p>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="icon-box">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <h5>Teléfono</h5>
+                            <p>+57 (1) 123-4567<br>+57 310 987-6543</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon-box">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <h5>Horario de Atención</h5>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4">Envíanos un Mensaje</h4>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="contactName" class="form-label">Nombre Completo</label>
+                                        <input type="text" class="form-control" id="contactName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactEmail" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="contactEmail" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactPhone" class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control" id="contactPhone">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="contactSubject" class="form-label">Asunto</label>
+                                        <input type="text" class="form-control" id="contactSubject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactMessage" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="contactMessage" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.574395371!2d-74.05469868573687!3d4.667945343199184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2e545a44b1%3A0x4b15740d7bca3f2a!2sCl.%2085%20%2311-53%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sus!4v1651234567890!5m2!1ses!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Respuestas a las dudas más comunes</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Qué áreas de Colombia cubren sus servicios?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ofrecemos nuestros servicios en todo el territorio colombiano. Nuestra sede principal está en Bogotá, pero contamos con equipos móviles que pueden desplazarse a cualquier ciudad o región del país según las necesidades del proyecto.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Qué tipo de drones utilizan para sus servicios?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Contamos con una flota diversa de drones profesionales, incluyendo modelos DJI Mavic 3 Pro, DJI Inspire 2 y DJI Matrice 300 RTK. Seleccionamos el equipo más adecuado según las necesidades específicas de cada proyecto, considerando factores como la calidad de imagen requerida, las condiciones del entorno y el tipo de tomas a realizar.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cuánto tiempo toma recibir el material final después de la sesión?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    El tiempo de entrega varía según el paquete contratado y la complejidad del proyecto. Para fotografías básicas, el tiempo de entrega es de 3 días hábiles. Para videos editados y proyectos más complejos, el tiempo puede extenderse hasta 7-10 días hábiles. Si necesitas el material con urgencia, ofrecemos servicios de entrega express con un costo adicional.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Necesitan permisos especiales para volar drones en ciertas áreas?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, en Colombia existen regulaciones específicas para el vuelo de drones. Contamos con todos los permisos y certificaciones necesarios de la Aeronáutica Civil para operar legalmente. Para zonas restringidas como aeropuertos, bases militares o parques nacionales, gestionamos los permisos especiales requeridos. Este proceso puede tomar tiempo adicional, por lo que recomendamos planificar con anticipación si tu proyecto se encuentra en una de estas áreas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Ofrecen servicios de edición y postproducción?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí, todos nuestros paquetes incluyen edición básica de las imágenes y videos capturados. Para los paquetes Profesional y Premium, ofrecemos servicios de postproducción avanzada, incluyendo corrección de color, estabilización, efectos especiales y animaciones. También podemos adaptar el material para diferentes plataformas (redes sociales, sitios web, televisión) según tus necesidades específicas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">¿Listo para elevar tu proyecto al siguiente nivel?</h2>
+            <p class="lead mb-4">Contáctanos hoy mismo y descubre cómo nuestros servicios de drones pueden transformar tu visión</p>
+            <div>
+                <a href="#cotizacion" class="btn btn-light btn-lg me-2">Solicitar Cotización</a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Recurso%201%404x-lXoVc4AgLYXSdBVa1VULpdHEnssg89.png" alt="SkyMotion Logo" class="footer-logo me-3" style="height: 40px;">
+                        <h4 class="mb-0">SkyMotion</h4>
+                    </div>
+                    <p>Servicios profesionales de fotografía y video con drones para publicidad, eventos y proyectos comerciales en toda Colombia.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#portafolio">Portafolio</a></li>
+                        <li><a href="#ejemplos">Ejemplos</a></li>
+                        <li><a href="#cotizacion">Cotización</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Servicios</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#servicios">Fotografía Inmobiliaria</a></li>
+                        <li><a href="#servicios">Video Publicitario</a></li>
+                        <li><a href="#servicios">Eventos y Celebraciones</a></li>
+                        <li><a href="#servicios">Inspección y Mapeo</a></li>
+                        <li><a href="#servicios">Producción Audiovisual</a></li>
+                        <li><a href="#servicios">Inspección de Infraestructura</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contáctanos</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt me-2"></i> Calle 85 #11-53, Oficina 401, Bogotá</li>
+                        <li><i class="bi bi-envelope me-2"></i> info@skymotion.com.co</li>
+                        <li><i class="bi bi-telephone me-2"></i> +57 (1) 123-4567</li>
+                        <li><i class="bi bi-whatsapp me-2"></i> +57 310 987-6543</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="#contacto" class="btn btn-outline-light">Enviar Mensaje</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 SkyMotion. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+                        <li class="list-inline-item"><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edificio Mirador</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-8 mb-4 mb-md-0">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="img-fluid rounded" alt="Proyecto inmobiliario en Bogotá">
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Detalles del Proyecto</h5>
+                            <p>Fotografía aérea para proyecto inmobiliario en Bogotá, destacando las características arquitectónicas y el entorno urbano.</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Cliente:</strong> Constructora Moderna</li>
+                                <li><strong>Ubicación:</strong> Bogotá, Colombia</li>
+                                <li><strong>Fecha:</strong> Marzo 2023</li>
+                                <li><strong>Servicios:</strong> Fotografía aérea, Video promocional</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary mt-3">Ver Galería Completa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
