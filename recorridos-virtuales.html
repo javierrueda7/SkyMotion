@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorridos Virtuales - SkyMotion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="recorridos-virtuales.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Recurso%201%404x-lXoVc4AgLYXSdBVa1VULpdHEnssg89.png" alt="SkyMotion Logo" class="navbar-logo">
+                SkyMotion
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="recorridos-virtuales.html">Recorridos Virtuales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#cotizacion">Cotización</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="virtual-tour-hero">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 text-white">
+                    <h1 class="animate__animated animate__fadeInDown">Recorridos Virtuales Inmersivos</h1>
+                    <p class="lead animate__animated animate__fadeInUp">Explora espacios en 360° y modelos 3D interactivos capturados con la última tecnología</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Virtual Tours Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Nuestros Recorridos Virtuales</h2>
+                <p class="section-subtitle">Explora propiedades, eventos y lugares desde cualquier dispositivo</p>
+            </div>
+
+            <!-- Featured Virtual Tour -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card featured-tour">
+                        <div class="card-body p-0">
+                            <div id="panorama" class="panorama-viewer"></div>
+                            <div class="tour-controls">
+                                <button class="btn btn-primary btn-sm" id="fullscreen"><i class="bi bi-arrows-fullscreen"></i> Pantalla Completa</button>
+                                <button class="btn btn-outline-light btn-sm" id="info-toggle"><i class="bi bi-info-circle"></i> Información</button>
+                            </div>
+                            <div class="tour-info p-4">
+                                <h3>Edificio Mirador - Vista Panorámica</h3>
+                                <p>Recorrido virtual 360° del proyecto inmobiliario Edificio Mirador en Bogotá. Explora la vista panorámica desde la terraza y disfruta de la ciudad desde las alturas.</p>
+                                <div class="tour-details">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h5>Detalles del Recorrido</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-camera-fill text-primary me-2"></i> Capturado con Insta360 X3</li>
+                                                <li><i class="bi bi-geo-alt-fill text-primary me-2"></i> Bogotá, Colombia</li>
+                                                <li><i class="bi bi-calendar-event text-primary me-2"></i> Marzo 2023</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5>Características</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Vista 360° completa</li>
+                                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Puntos de interés interactivos</li>
+                                                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Compatible con VR</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virtual Tour Gallery -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tour-card h-100">
+                        <div class="tour-thumbnail">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Recorrido virtual de apartamento modelo">
+                            <div class="tour-overlay">
+                                <a href="#" class="btn btn-primary tour-btn" data-bs-toggle="modal" data-bs-target="#tourModal"><i class="bi bi-play-circle"></i> Ver Recorrido</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Apartamento Modelo - Residencial Marina</h5>
+                            <p class="card-text">Recorrido virtual del apartamento modelo en el complejo Residencial Marina en Cartagena.</p>
+                            <div class="tour-meta">
+                                <span><i class="bi bi-camera text-primary"></i> Insta360 X3</span>
+                                <span><i class="bi bi-eye text-primary"></i> 360° Tour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tour-card h-100">
+                        <div class="tour-thumbnail">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Modelo 3D de proyecto arquitectónico">
+                            <div class="tour-overlay">
+                                <a href="#" class="btn btn-primary tour-btn" data-bs-toggle="modal" data-bs-target="#modelModal"><i class="bi bi-box"></i> Ver Modelo 3D</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto El Prado - Modelo 3D</h5>
+                            <p class="card-text">Modelo 3D interactivo del proyecto residencial El Prado en las afueras de Bogotá.</p>
+                            <div class="tour-meta">
+                                <span><i class="bi bi-building text-primary"></i> Modelo Arquitectónico</span>
+                                <span><i class="bi bi-box text-primary"></i> Recorrido 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card tour-card h-100">
+                        <div class="tour-thumbnail">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg" class="card-img-top" alt="Recorrido virtual de Parque Tayrona">
+                            <div class="tour-overlay">
+                                <a href="#" class="btn btn-primary tour-btn" data-bs-toggle="modal" data-bs-target="#tourModal"><i class="bi bi-play-circle"></i> Ver Recorrido</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Parque Tayrona - Experiencia Inmersiva</h5>
+                            <p class="card-text">Recorrido virtual 360° por los senderos y playas del Parque Nacional Natural Tayrona.</p>
+                            <div class="tour-meta">
+                                <span><i class="bi bi-camera text-primary"></i> Insta360 X3</span>
+                                <span><i class="bi bi-eye text-primary"></i> 360° Tour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Sube Tus Archivos</h2>
+                <p class="section-subtitle">Comparte tus archivos de Insta360 X3 o modelos 3D para crear tu recorrido virtual</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <ul class="nav nav-tabs mb-4" id="uploadTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="insta360-tab" data-bs-toggle="tab" data-bs-target="#insta360" type="button" role="tab" aria-controls="insta360" aria-selected="true">Archivos Insta360 X3</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="model3d-tab" data-bs-toggle="tab" data-bs-target="#model3d" type="button" role="tab" aria-controls="model3d" aria-selected="false">Modelos 3D</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="uploadTabsContent">
+                                <div class="tab-pane fade show active" id="insta360" role="tabpanel" aria-labelledby="insta360-tab">
+                                    <form id="insta360Form">
+                                        <div class="mb-3">
+                                            <label for="tourName" class="form-label">Nombre del Recorrido</label>
+                                            <input type="text" class="form-control" id="tourName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="tourDescription" class="form-label">Descripción</label>
+                                            <textarea class="form-control" id="tourDescription" rows="3" required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="insta360Files" class="form-label">Archivos Insta360 X3 (.insp, .insv, .jpg)</label>
+                                            <div class="upload-area" id="insta360DropArea">
+                                                <input type="file" class="form-control" id="insta360Files" accept=".insp,.insv,.jpg" multiple hidden>
+                                                <div class="upload-content">
+                                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                                    <p>Arrastra y suelta tus archivos aquí o <span class="browse-link">examina</span></p>
+                                                    <p class="upload-info">Formatos soportados: .insp, .insv, .jpg (panorámicas 360°)</p>
+                                                </div>
+                                            </div>
+                                            <div class="file-list mt-3" id="insta360FileList"></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="contactEmail" class="form-label">Email de Contacto</label>
+                                            <input type="email" class="form-control" id="contactEmail" required>
+                                            <div class="form-text">Te contactaremos cuando tu recorrido virtual esté listo.</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Enviar Archivos</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="model3d" role="tabpanel" aria-labelledby="model3d-tab">
+                                    <form id="model3dForm">
+                                        <div class="mb-3">
+                                            <label for="modelName" class="form-label">Nombre del Modelo</label>
+                                            <input type="text" class="form-control" id="modelName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="modelDescription" class="form-label">Descripción</label>
+                                            <textarea class="form-control" id="modelDescription" rows="3" required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="model3dFiles" class="form-label">Archivos 3D (.glb, .gltf, .obj, .fbx)</label>
+                                            <div class="upload-area" id="model3dDropArea">
+                                                <input type="file" class="form-control" id="model3dFiles" accept=".glb,.gltf,.obj,.fbx,.mtl,.zip" multiple hidden>
+                                                <div class="upload-content">
+                                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                                    <p>Arrastra y suelta tus archivos aquí o <span class="browse-link">examina</span></p>
+                                                    <p class="upload-info">Formatos soportados: .glb, .gltf, .obj, .fbx (con texturas)</p>
+                                                </div>
+                                            </div>
+                                            <div class="file-list mt-3" id="model3dFileList"></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="modelContactEmail" class="form-label">Email de Contacto</label>
+                                            <input type="email" class="form-control" id="modelContactEmail" required>
+                                            <div class="form-text">Te contactaremos cuando tu modelo 3D interactivo esté listo.</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary">Enviar Archivos</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Benefits -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Beneficios de los Recorridos Virtuales</h2>
+                <p class="section-subtitle">Descubre cómo los recorridos virtuales pueden transformar tu negocio</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h4>Experiencia Inmersiva</h4>
+                        <p>Ofrece a tus clientes una experiencia interactiva y realista que les permite explorar espacios como si estuvieran allí físicamente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h4>Mayor Engagement</h4>
+                        <p>Los usuarios pasan hasta 10 veces más tiempo interactuando con recorridos virtuales que con fotografías estáticas tradicionales.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h4>Alcance Global</h4>
+                        <p>Permite que clientes potenciales de cualquier parte del mundo exploren tus espacios sin limitaciones geográficas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <h4>Ahorro de Tiempo</h4>
+                        <p>Reduce visitas innecesarias y optimiza el proceso de toma de decisiones para clientes y empresas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <h4>Ideal para Inmobiliarias</h4>
+                        <p>Aumenta el interés en propiedades y reduce el tiempo de venta al ofrecer visitas virtuales detalladas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card text-center">
+                        <div class="benefit-icon">
+                            <i class="bi bi-share"></i>
+                        </div>
+                        <h4>Fácil de Compartir</h4>
+                        <p>Comparte tus recorridos virtuales en redes sociales, sitios web y plataformas de mensajería con un simple enlace.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">¿Listo para crear tu propio recorrido virtual?</h2>
+            <p class="lead mb-4">Contáctanos hoy mismo y descubre cómo podemos transformar tus espacios en experiencias digitales inmersivas</p>
+            <div>
+                <a href="#" class="btn btn-light btn-lg me-2">Solicitar Cotización</a>
+                <a href="#" class="btn btn-outline-light btn-lg">Ver Ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Recurso%201%404x-lXoVc4AgLYXSdBVa1VULpdHEnssg89.png" alt="SkyMotion Logo" class="footer-logo me-3" style="height: 40px;">
+                        <h4 class="mb-0">SkyMotion</h4>
+                    </div>
+                    <p>Servicios profesionales de fotografía, video con drones y recorridos virtuales para publicidad, eventos y proyectos comerciales en toda Colombia.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="mb-4">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html#inicio">Inicio</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#portafolio">Portafolio</a></li>
+                        <li><a href="recorridos-virtuales.html">Recorridos Virtuales</a></li>
+                        <li><a href="index.html#cotizacion">Cotización</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Servicios</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html#servicios">Fotografía Inmobiliaria</a></li>
+                        <li><a href="index.html#servicios">Video Publicitario</a></li>
+                        <li><a href="index.html#servicios">Eventos y Celebraciones</a></li>
+                        <li><a href="recorridos-virtuales.html">Recorridos Virtuales 360°</a></li>
+                        <li><a href="recorridos-virtuales.html">Modelos 3D Interactivos</a></li>
+                        <li><a href="index.html#servicios">Inspección de Infraestructura</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contáctanos</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt me-2"></i> Calle 85 #11-53, Oficina 401, Bogotá</li>
+                        <li><i class="bi bi-envelope me-2"></i> info@skymotion.com.co</li>
+                        <li><i class="bi bi-telephone me-2"></i> +57 (1) 123-4567</li>
+                        <li><i class="bi bi-whatsapp me-2"></i> +57 310 987-6543</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="index.html#contacto" class="btn btn-outline-light">Enviar Mensaje</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 SkyMotion. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Términos y Condiciones</a></li>
+                        <li class="list-inline-item"><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Virtual Tour Modal -->
+    <div class="modal fade" id="tourModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Recorrido Virtual 360°</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="modalPanorama" class="panorama-viewer"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="modalFullscreen"><i class="bi bi-arrows-fullscreen"></i> Pantalla Completa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Model Modal -->
+    <div class="modal fade" id="modelModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modelo 3D Interactivo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="modelViewer" class="model-viewer"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="modelFullscreen"><i class="bi bi-arrows-fullscreen"></i> Pantalla Completa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Pannellum for 360 panoramas -->
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <!-- Three.js for 3D models -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- Custom JS -->
+    <script src="recorridos-virtuales.js"></script>
+</body>
+</html>
+

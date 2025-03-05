@@ -1,0 +1,290 @@
+/* Virtual Tours Page Styles */
+
+/* Hero Section */
+.virtual-tour-hero {
+  height: 60vh;
+  min-height: 400px;
+  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DJI_0194.JPG-PegknNGXrhI2zQ4eRDVXCrQNXDOIBQ.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 76px;
+}
+
+.virtual-tour-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.85), rgba(30, 58, 138, 0.75));
+}
+
+/* Panorama Viewer */
+.panorama-viewer {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.tour-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+.tour-info {
+  background-color: var(--light-color);
+  border-radius: 0 0 8px 8px;
+}
+
+.featured-tour {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border: none;
+  overflow: hidden;
+}
+
+/* Tour Cards */
+.tour-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tour-thumbnail {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.tour-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tour-card:hover .tour-thumbnail img {
+  transform: scale(1.05);
+}
+
+.tour-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tour-card:hover .tour-overlay {
+  opacity: 1;
+}
+
+.tour-btn {
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.tour-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Upload Area */
+.upload-area {
+  border: 2px dashed var(--secondary-color);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(59, 130, 246, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.upload-area.dragover {
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: var(--primary-color);
+}
+
+.upload-content i {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.browse-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.upload-info {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+.file-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+}
+
+.file-icon {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.file-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.file-size {
+  font-size: 0.8rem;
+  color: #666;
+  margin-left: 10px;
+}
+
+.file-remove {
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* Benefits Section */
+.benefit-card {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-icon i {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefit-card h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Model Viewer */
+.model-viewer {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f1f5f9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .panorama-viewer,
+  .model-viewer {
+    height: 400px;
+  }
+
+  .virtual-tour-hero {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .panorama-viewer,
+  .model-viewer {
+    height: 350px;
+  }
+
+  .tour-thumbnail {
+    height: 180px;
+  }
+
+  .virtual-tour-hero {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .panorama-viewer,
+  .model-viewer {
+    height: 300px;
+  }
+
+  .tour-controls {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .tour-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
